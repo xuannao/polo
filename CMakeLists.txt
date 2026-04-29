@@ -39,6 +39,10 @@ endif()
 # Package Config
 # --------------------------------------------------------------------------------------------------------
 
+if(NOT PACKAGEPROJECT)
+    return()
+endif()
+
 include("cmake/cpm.cmake")
 
 CPMFindPackage(
